@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CustomerListItem from './CustomerListItem';
 
-const CustomerList = ({customers}) => {
+const CustomerList = ({customers, urlPath}) => {
     return (
         <div>
             <div className="customer-list">
@@ -11,6 +11,7 @@ const CustomerList = ({customers}) => {
                         <CustomerListItem
                             key={c.dni}
                             name={c.name}
+                            dni={c.dni}
                             editAction={'Editar'}
                             delAction={'Eliminar'}
                             urlPath={urlPath}
@@ -23,7 +24,7 @@ const CustomerList = ({customers}) => {
 };
 
 CustomerList.propTypes = {
-    customer:PropTypes.array.isRequired,
+    customers:PropTypes.array.isRequired,
     urlPath:PropTypes.string.isRequired,
 };
 
