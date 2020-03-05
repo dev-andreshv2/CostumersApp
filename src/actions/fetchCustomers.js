@@ -31,7 +31,7 @@ const customers =[
 ];*/
 
 
-const url ='https://my-json-server.typicode.com/dev-andreshv2/datacustomer/customers';
+//const url ='https://my-json-server.typicode.com/dev-andreshv2/datacustomer/customers';
 //export const fetchCustomers = createAction(FETCH_CUSTOMERS, ()=>customers); sin midldeware
 const apiFetchCustomers = () =>(apiGet(urlCustomers));
 
